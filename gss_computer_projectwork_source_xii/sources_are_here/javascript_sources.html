@@ -1,0 +1,355 @@
+<!-- 1.Javascript for if statement -->
+<HTML>
+    <HEAD>
+        <TITLE>
+            if statement
+        </TITLE>
+        
+
+        <script>
+            var a = prompt("Enter the number to check if it is positive:");
+            if (a > 0)
+            {
+                document.write("<h3>The number is positive...</h3>");
+            }
+
+            </script>
+    </HEAD>
+    <BODY>
+
+        <p>
+            ***Coded By:Name***
+        </p>
+            
+        
+
+
+    </BODY>
+</HTML>
+
+
+<!-- 2.Javascript for if else statement -->
+<HTML>
+    <HEAD>
+        <TITLE>
+            IF ELSE
+        </TITLE>
+       
+        <script>
+            var age = prompt("Enter your age:");
+            if (age >= 18 )
+            {
+                document.write("<h3>You are eligible to vote.</h3>");
+            }
+            else{
+                document.write("<h3>Sorry you can't vote.</h3>")
+            }
+
+            </script>
+    </HEAD>
+    <BODY>
+        <p>
+            ***Coded By:Name***
+        </p>
+        
+
+
+
+    </BODY>
+</HTML>
+
+<!-- 3.Javascript for ifelseif -->
+<HTML>
+    <HEAD>
+        <TITLE>
+            IF ELSE IF
+        </TITLE>
+        
+        <script>
+            var n = prompt("Enter any number:");
+            if (n > 0 )
+            {
+                document.write("<h3>The number is positive...</h3>");
+            }
+            else if (n < 0){
+                document.write("<h3>The number is negative...</h3>")
+            }
+            else{
+                document.write("<h3>The number is zero.</h3>")
+            }
+
+            </script>
+    </HEAD>
+    <BODY>
+        <p>
+            ***Coded By:Name***
+        </p>
+        
+        
+
+    </BODY>
+</HTML>
+
+<!-- 4. Javascript for switch case -->
+<HTML>
+    <HEAD>
+        <TITLE>
+            switch case statement
+        </TITLE>
+        
+        <script>
+            var day = prompt("Enter number for day:");
+            switch(day){
+                case (day="1"):
+                    document.write("Sunday");
+                    break;
+                    case (day="2"):
+                    document.write("Monday");
+                    break;
+                    case (day="3"):
+                    document.write("Tuesday");
+                    break;
+                    case (day="4"):
+                    document.write("Wednesday");
+                    break;
+                    case (day="5"):
+                    document.write("Thursday");
+                    break;
+                    case (day="6"):
+                    document.write("Friday");
+                    break;
+                    case (day="7"):
+                    document.write("Saturday");
+                    break;
+                    default:
+                        document.write("Please enter valid day number");
+                        break;
+
+            }
+            </script>
+    </HEAD>
+    <BODY>
+        <p>
+            ***Coded By:Name***
+        </p>
+
+
+    </BODY>
+</HTML>
+
+<!-- 5. Javascript for for loop -->
+<HTML>
+    <HEAD>
+        <TITLE>
+            FOR LOOP
+        </TITLE>
+        
+
+        <script>
+            var i; 
+            for (i = 0; i<=10; i++)
+            {
+                document.write("<h3>"+i+",</h3>");
+            }
+
+            </script>
+    </HEAD>
+    <BODY>
+
+        <p>
+            ***Coded By:Name***
+        </p>
+
+
+       
+
+    </BODY>
+</HTML>
+
+
+
+<!-- 6. Javascript for do while loop -->
+<HTML>
+    <HEAD>
+        <TITLE>
+            DO WHILE LOOP
+        </TITLE>
+        
+
+        <script>
+            var i = 0;
+            do{
+                document.write(i,",");
+                i = i +1;
+            }
+            while(i<=20)
+            
+            </script>
+    </HEAD>
+    <BODY>
+
+        <p>
+            ***Coded By:Name***
+        </p>
+
+
+    </BODY>
+</HTML>
+
+
+<!-- 7. Javascript for while loop -->
+<HTML>
+    <HEAD>
+        <TITLE>
+            WHILE LOOP
+        </TITLE>
+        
+        <script>
+            var i=0; 
+            while (i<=15)
+            {
+                document.write(i,",");
+                    i = i+1;
+            }
+            
+            </script>
+    </HEAD>
+    <BODY>
+
+        <p>
+            ***Coded By:Name***
+        </p>
+
+
+    </BODY>
+</HTML>
+
+<!-- 8. Java script for onclick event -->
+<HTML>
+    <HEAD>
+        <TITLE>
+            ONCLICK EVENT
+        </TITLE>
+        
+        <SCRIPT>
+            
+            function clickMe()
+            {
+                alert("You just clicked the button...");
+            }
+            
+        </SCRIPT>
+    </HEAD>
+    <BODY>
+        Click the button:<br><br>
+        <form>
+            <input type="button" onclick=" clickMe() " Value="Click here">
+        </form>
+        <p>
+            ***Coded By:Name***
+        </p>
+
+        
+    </BODY>
+</HTML>
+
+<!-- 10. Javascript for form validation  -->
+<HTML>
+    <HEAD>
+
+    <TITLE>
+        form valodation
+    </TITLE>
+    
+    
+<script type="text/javascript">
+    function validate()
+    {
+        if(document.myform.Name.value=="")
+        {
+            alert("Please Provide Your Name!!");
+            document.myform.Name.focus();
+            return false;
+        }
+        if (document.myform.Email.value=="")
+        {
+            alert("Please Provide Your Email!!");
+            document.myform.Email.focus();
+            return false;
+        }
+        if (document.myform.Zip.value=="" || document.myform.Zip.value.length !="5")
+        {
+            alert ("Please Provide Zip Code(In Format of #####)");
+            document.myform.Zip.focus();
+            return false;
+        }
+        if (document.myform.Country.value =="0")
+        {
+            alert("Please Provide Your Country/Continent...");
+            document.myform.Country.focus();
+            return false;
+        }
+        return true;
+
+    }  
+    </script>  
+    
+</HEAD>
+<BODY>
+    <form action="/cgi-bin/test.cgi" name="myform" onsubmit="return( validate() );">
+    <table cellpadding="2" cellspacing="2" border="1">
+        <tr>
+        <td align="right">Name:</td>
+        <td> <input type="text" name="Name"></td>
+        </tr>
+        <tr>
+            <td align="right">Email:</td>
+            <td><input type="text" name="Email"></td>
+            </tr>
+            <tr>
+                <td align="right">Zip Code:</td>
+                <td ><input type="text" name="Zip" ></td>
+                </tr>
+                <tr>
+                    <td align="right">Country:
+
+                    </td>
+                    <td>
+                        <select name="Country">
+                            <option value="0">Choose Country</option>
+                            <option value="1">Nepal</option>
+                            <option value="2">Bhutan</option>
+                            <option value="3">Bangladesh</option>
+                            <option value="4">Sri Lanka</option>
+                            <option value="5">India</option> 
+                            <option value="6">China</option>
+                        </select>
+                    </td>
+                </tr>
+    </table>
+       <table cellspacing ="2" cellpadding="2" border="1" >
+        <tr>
+            <td align="right">
+                <input type="submit" value="Submit">
+                </td>
+                <td>
+                <input type="reset" value="Reset">
+            </td>
+        </tr>
+       </table>
+ </form>
+ <br>
+
+ <p>
+     ***Coded By: ASHIM NEPAL***
+ </p>
+ 
+
+</BODY>
+</HTML>
+
+
+
+
+
+
